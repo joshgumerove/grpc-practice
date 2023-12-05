@@ -28,5 +28,6 @@ func main() {
 
 	// callSayHello(client) comment: Unary API
 
-	callSayHelloServerStream(client, names)
+	// callSayHelloServerStream(client, names)
+	callSayHelloClientStream(client, names)
 }
