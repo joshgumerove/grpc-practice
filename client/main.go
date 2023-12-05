@@ -22,9 +22,11 @@ func main() {
 
 	client := pb.NewGreetServiceClient(conn)
 
-	// names := &pb.NamesList{
-	// 	Names: []string{"Josh", "Jeremy"}
-	// }
+	names := &pb.NamesList{
+		Names: []string{"Josh", "Jeremy"},
+	}
 
-	callSayHello(client)
+	// callSayHello(client) comment: Unary API
+
+	callSayHelloServerStream(client, names)
 }
