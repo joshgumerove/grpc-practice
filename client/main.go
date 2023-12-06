@@ -29,5 +29,6 @@ func main() {
 	// callSayHello(client) comment: Unary API
 
 	// callSayHelloServerStream(client, names)
-	callSayHelloClientStream(client, names)
+	// callSayHelloClientStream(client, names)
+	callHelloBidirectionalStream(client, names)
 }
